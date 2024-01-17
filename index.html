@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+        #myBtn {
+            border: 0;
+            margin: 0;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button id="myBtn">Change Background Color to Black</button>
+</body>
+    <script>
+        let body = document.getElementById("body");
+        let btn = document.getElementById("myBtn");
+        btn.addEventListener("click", "changeBackgroundColor()");
+        int i = 0;
+        function changeBackgroundColor() {
+            i+=1;
+            if (i%2 != 1) {
+            
+                body.style.backgroundColor = "black";
+            } else {
+                body.style.backgroundColor = "white";
+            }
+         }
+        
+    </script>
+</html>
