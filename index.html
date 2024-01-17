@@ -19,22 +19,22 @@
     <title>Document</title>
 </head>
 <body id="body">
-    <button id="myBtn">Change Background Color to Black</button>
-</body>
+    <button id="myBtn" onclick="changeBackgroundColor()">Change Background Color to Black</button>
     <script>
         let body = document.getElementById("body");
         let btn = document.getElementById("myBtn");
-        btn.addEventListener("click", "changeBackgroundColor()");
-        int i = 0;
+        let i = 0;
+
         function changeBackgroundColor() {
-            i+=1;
-            if (i%2 != 1) {
-            
+            i += 1;
+            if (i % 2 !== 0) {
                 body.style.backgroundColor = "black";
+                btn.textContent = "Change Background Color to White";
             } else {
                 body.style.backgroundColor = "white";
+                btn.textContent = "Change Background Color to Black";
             }
-         }
-        
+        }
     </script>
+</body>
 </html>
